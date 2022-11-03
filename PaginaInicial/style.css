@@ -1,0 +1,191 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#topo{
+    min-height: 100vh;
+    width: 100%;
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(14,174,87,1) 0%, rgba(12,116,117,1) 90% );
+    background-size: 300%;
+    animation: colors 15s ease infinite;
+}
+@keyframes colors{
+    0%{
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100%{
+        background-position: 100% 50%;
+    }
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2% 6%;
+}
+nav .logo{
+    width: 150px;
+}
+.links{
+    flex: 1;
+    text-align: right;
+}
+.links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.links ul li a{
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.links ul li::after{
+    content: '';
+    width: 0%;
+    height: 1px;
+    background-color: rgb(247, 247, 247);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.links ul li:hover::after{
+ width: 100%;
+}
+
+.texto{
+    width: 90%;
+    color: aliceblue;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%, -50%);
+    text-align: center;
+}
+.texto h1{
+    font-size: 92px;
+}
+
+ .btn{
+    display: inline-block;
+    text-decoration: none;
+    color: aliceblue;
+    border: 1px solid #fff;
+    border-radius: 50px;
+    padding: 12px 34px;
+    background: transparent;
+    position: relative;
+ }
+ .btn:hover{
+    border:1px solid #fff;
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(14,174,87,1) 0%, rgba(12,116,117,1) 90% );
+ }
+ nav .fa{
+    display: none;
+ }
+ #conteudo{
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(14,174,87,1) 0%, rgba(12,116,117,1) 90% );
+    background-size: 300%;
+    animation: colors 15s ease infinite;
+
+ }
+ .conteudo-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+ }
+ .conteudo-container p{
+    color: #fff;
+    font-size: 1.9rem;
+    width: 750px;
+ }
+ .conteudo-container img{
+    height: 600px;
+    
+    
+ }
+ .headline{
+    padding: 50px;
+    font-size: 1rem;
+    color: #fff;
+    text-align: center;
+ }
+ .card1{
+    width: 350px;
+    height: 75vh;
+    padding: 20px;
+    backdrop-filter: blur(20px);
+    border: 2px solid #000;
+ }
+ footer{
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(14,174,87,1) 0%, rgba(12,116,117,1) 90% );
+    display: flex;
+    justify-content: center;
+ }
+ @media(max-width: 999px) {
+     .texto h1{
+        font-size: 60px;
+     }
+     .links ul li{
+       display: block;
+
+     }
+    .links{
+        position: absolute;
+        background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(14,174,87,1) 0%, rgba(12,116,117,1) 90% );
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa{
+        display: block;
+        color: #fff;
+        margin: 20px;
+        font-size: 22px;
+        cursor: pointer;
+
+    }
+   .headline{
+    color: #fff;
+    text-align: center;
+    padding-top: 15px;
+    font-size: 1.1rem;
+   }
+ 
+.conteudo-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    width: 100%;
+    
+
+}
+.conteudo-container img{
+   height: 450px;
+
+}
+.conteudo-container p{
+    position: relative;
+    top: 10px;
+    margin:30px;
+    width: 100%;
+
+}
+footer{
+    color: rgba(239, 228, 228, 0.838);
+}
+}
