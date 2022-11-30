@@ -5,7 +5,7 @@
     font-family: 'Ubuntu', sans-serif;
 }
 #topo{
-    background-image: url(/imagens/back.png);
+    background-image: url(/ReciFacil/Inicio/imagens/back.png);
     background-size: 420px;
     background-repeat: no-repeat;
     width: 100%;
@@ -69,6 +69,66 @@ nav .logo{
  nav .fa{
     display: none;
  }
+.escolha{
+    display: flex;
+}
+.popUp{
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 250px;
+  border: none;
+  border-radius: 20px;
+  background-color: rgb(142, 125, 125);
+  
+}
+#close{
+    position: absolute;
+    margin-left: 149px;
+    border: none;
+    background: none;
+    font-size: 1.1rem;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+#close:hover{
+    border: none;
+    background-color: rgb(29, 182, 29);
+    color: #fff;
+}
+.popUp h2{
+
+  text-align: center;
+  margin: 1rem;
+  color: #fff;
+
+}
+.popUp a{
+  margin: 20px;
+  width: 40%;
+  color: #fff;
+  margin-left:110px;
+  background-color: rgb(29, 182, 29);
+  border-radius: 20px;
+  padding: 15px; 
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.popUp a:hover{
+    
+    border-bottom:2px solid #fff;
+}
+
 
  @media(max-width: 999px) {
     

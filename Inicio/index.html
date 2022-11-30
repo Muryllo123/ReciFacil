@@ -9,13 +9,14 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+    
    <header id="topo">
     <nav>
     <section class="links" id="links">
         <i class="fa fa-times" onclick="hideMenu()"></i>
         <ul>
-            <li><a href="#">Login</a></li>
-            <li><a href="#">Cadastro</a></li>
+            <li><a href="#" id="login">Login</a></li>
+            <li><a href="#" id="cadastro">Cadastro</a></li>
             <li><a href="#">Sobre</a></li>
             <li><a href="#">Suporte</a></li>
         </ul>
@@ -23,9 +24,31 @@
     <i class="fa fa-bars" onclick="showMenu()"></i>
     </nav>
     <div class="texto">
-        <img src="/imagens/Logotipo1.png" class="logotipo">
+        <img src="/ReciFacil/Inicio/imagens/Logotipo1.png" class="logotipo">
     </div>
    </header>
-    <script src="/script.js"></script>
+   <div class="escolha">
+    
+   <dialog class="popUp" id="logar">
+    <div class="container">
+    <h2>Logar como:</h2>
+    <a href="#">Ponto de Coleta</a>
+    <a href="#">Doador</a>
+    <button id="close" class="close">Voltar</button>
+    </div>
+    </dialog>
+    <dialog class="popUp" id="cadastrar">
+    <div class="container">
+    <h2>Quer se Cadastrar como:</h2>
+    <a href="#">Ponto de Coleta</a>
+    <a href="#">Doador</a>
+    <button id="close" class="close">Voltar</button>
+    </div>
+  </dialog>
+   
+   </div>
+    <script src="/ReciFacil/Inicio/script.js"></script>
+   
+
 </body>
 </html>
