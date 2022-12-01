@@ -100,3 +100,37 @@ img{
     color: rgb(23, 167, 23);
 
 }
+
+dialog{
+    margin:50px;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform:translate(-50%, -50%);
+    width: 600px;
+    height: 350px;
+    padding: 50px;
+    border: 3px solid green;
+    border-radius: 10px;
+}
+.divMid{
+    position: relative;
+    top: 20px;
+    text-align: center;
+}
+.btn{
+  color: #fff;
+  border: none;
+  background: none;
+  background-color: green;
+  border-radius: 20px;
+  cursor: pointer;
+  width: 100px;
+  height: 35px;
+  transition: 0.5s;
+}
+.btn:hover{
+    border: 2px solid rgb(23, 171, 23);
+    background-color: #fff;
+    color: green;
+}

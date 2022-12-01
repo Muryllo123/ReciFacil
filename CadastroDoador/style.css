@@ -75,7 +75,7 @@ img{
 }
 .termos{
     position: relative;
-    top: 120px;
+    top: 45px;
     text-align: center;
 }
 #content{
@@ -89,7 +89,7 @@ img{
     border: none;
     background:none;
     background-color: rgb(23, 167, 23);
-    width: 100px;
+    width: 110px;
     padding: 12px;
     border-radius: 20px;
     cursor: pointer;
