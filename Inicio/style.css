@@ -5,7 +5,7 @@
     font-family: 'Ubuntu', sans-serif;
 }
 #topo{
-    background-image: url(/ReciFacil/Inicio/imagens/back.png);
+    background-image: url(/Inicio/imagens/back.png);
     background-size: 420px;
     background-repeat: no-repeat;
     width: 100%;
@@ -84,7 +84,7 @@ nav .logo{
   background-color: rgb(142, 125, 125);
   
 }
-#close{
+.close{
     position: absolute;
     margin-left: 149px;
     border: none;
@@ -98,7 +98,7 @@ nav .logo{
     cursor: pointer;
     transition: 0.5s;
 }
-#close:hover{
+.close:hover{
     border: none;
     background-color: rgb(29, 182, 29);
     color: #fff;

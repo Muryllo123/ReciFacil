@@ -12,19 +12,24 @@ function hideMenu(){
     links.style.display = "none";
 }
 const login = document.getElementById("login")
-const dialog = document.getElementById("logar")
+const logar= document.getElementById("logar")
+const fechar = document.getElementById("exit")
 login.onclick = function (){
     logar.showModal()
 }
 
-const cadastro = document.getElementById("cadastro")
-const modal = document.getElementById("cadastrar")
-const btn = document.getElementById("dialog close")
-
-cadastro.onclick = function () {
-    modal.showModal ()
+fechar.onclick = function() {
+    logar.close()
 }
 
-close.onclick = function ( ) {
-    dialog.close()
+const cadastro = document.getElementById("cadastro")
+const janela = document.getElementById("janela")
+const exit = document.getElementById("sair")
+
+cadastro.onclick = function (){
+    janela.showModal()
+}
+
+exit.onclick =  function () {
+    janela.close()
 }
