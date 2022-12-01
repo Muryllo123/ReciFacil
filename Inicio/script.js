@@ -19,7 +19,12 @@ login.onclick = function (){
 
 const cadastro = document.getElementById("cadastro")
 const modal = document.getElementById("cadastrar")
+const btn = document.getElementById("dialog close")
 
 cadastro.onclick = function () {
     modal.showModal ()
+}
+
+close.onclick = function ( ) {
+    dialog.close()
 }
