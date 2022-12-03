@@ -9,3 +9,4 @@ concordo.onclick =function (){
 buttonClose.onclick = function (){
     janela.close()
 }
+
